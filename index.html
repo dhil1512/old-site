@@ -69,11 +69,13 @@
         <button class="btn btn-secondary" type="button">API</button>
         <button class="btn btn-secondary" type="button">JSON</button>
 
-        <p class="lead">While playing games on Hypixel's popular Minecraft server with my friends, I wanted an easy way to check my in-game stats and compare my progress against others. So, I decided to create a Discord Chat Bot using Python. It allows the user to conveniently access game stats through the Hypixel API.</p>
+        <p class="lead">While I was playing games with my friends on the Hypixel Minecraft Server, I wanted an easy way to check my in-game stats and see how I compared to others. I therefore decided to make a Discord Chat Bot using Python. This bot lets users quickly view their game stats by executing a simple command.</p>
 
-        <p class="lead">Following the command prefix, users enter their username. The program then queries the Mojang API using the requests library, to obtain a UUID, a unique Minecraft Player identifier. With this identifier, the program proceeds to query the Hypixel API for player stats. It navigates the JSON response to extract relevant statistics and presents them in a clear embed message within Discord chat, along with buttons to select different modes and gather different information.</p>
+        <p class="lead">The program starts with the user executing a Discord command with their Minecraft username as a parameter. The program then sends a request to Mojang’s API to fetch the player’s UUID (a unique identifier for Minecraft accounts). With this UUID, the program can then send a request to the Hypixel API to get the player’s data.  A JSON response is then returned from the API request and the bot sorts through and displays the relevant information in a clear embed message in Discord. </p>
 
-        <p class="lead">I realised the repetition of inputting your username everytime, so I designed an SQL database that connects Discord User IDs with Minecraft Player IDs. Now, leaving the username field empty still shows your player stats, and you can still enter another username to view their statistics. Improving speed and efficiency for the user. Shown below in the GIF.</p>
+        <p class="lead">After some testing of the Bot, I noticed that it was a rather annoying to keep typing your username everytime you wanted to run a command. To solve this I made a database that links Discord User IDs to Minecraft Player IDs. Now, you can execute the command without a parameter, and it will still show your game stats. And if you want to check someone else's stats, you can still just type in their username. This makes everything faster and easier for the user. You can see how it works in the GIF below.</p>
+
+        <p class="lead">I’ve also implemented buttons below the bot’s response to switch between different modes and edit the message.</p>
       </div>
     </div>
   </div>
