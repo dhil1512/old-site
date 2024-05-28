@@ -1,173 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  
-  <title>DylanW.co.uk | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dylanw.co.uk</title>
 </head>
 <body>
-    
-  <nav class="navbar navbar-expand-md bg-light shadow p-3">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* Container to use flexbox to center its contents */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height */
+            width: 100%;
+            background: #000;
+        }
+
+        /* Optional styling for the centered span */
+        .centered {
+            font-size: 20px;
+            color: #6E00FF;
+        }
+    </style>
+
     <div class="container">
-      <a class="navbar-brand" href="#">DylanW.co.uk</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Links
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="mailto:dylan.ra.wilson@proton.me">Email</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Icons to add later
-        <div class="d-flex align-items-center">
-          <div class="fs-5">
-            <i class="bi bi-linkedin me-2"></i>
-            <i class="bi bi-github me-2"></i>
-            <i class="bi bi-envelope-at-fill me-2"></i>
-          </div>
-        </div>  
-        -->
-      </div>
+        <span class="centered">This site is down for maintanence.</span>
     </div>
-  </nav>
-
-  <!-- title section -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="mt-5">Welcome to DylanW.co.uk</h1>
-        <p class="lead">Here are some of my most recent projects that i've been working on.</p>
-        <hr class="my-4">
-      </div>
-    </div>
-  </div>
-
-  <!-- Discord bot section -->
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="mt-5">Discord Chat Bot using Python</h3>
-        <button class="btn btn-secondary" type="button">Python</button>
-        <button class="btn btn-secondary" type="button">Requests</button>
-        <button class="btn btn-secondary" type="button">SQL</button>
-        <button class="btn btn-secondary" type="button">API</button>
-        <button class="btn btn-secondary" type="button">JSON</button>
-
-        <p class="lead">While I was playing games with my friends on the Hypixel Minecraft Server, I wanted an easy way to check my in-game stats and see how I compared to others. I therefore decided to make a Discord Chat Bot using Python. This bot lets users quickly view their game stats by executing a simple command.</p>
-
-        <p class="lead">The program starts with the user executing a Discord command with their Minecraft username as a parameter. The program then sends a request to Mojang’s API to fetch the player’s UUID (a unique identifier for Minecraft accounts). With this UUID, the program can then send a request to the Hypixel API to get the player’s data.  A JSON response is then returned from the API request and the bot sorts through and displays the relevant information in a clear embed message in Discord. </p>
-
-        <p class="lead">After some testing of the Bot, I noticed that it was a rather annoying to keep typing your username everytime you wanted to run a command. To solve this I made a database that links Discord User IDs to Minecraft Player IDs. Now, you can execute the command without a parameter, and it will still show your game stats. And if you want to check someone else's stats, you can still just type in their username. This makes everything faster and easier for the user. You can see how it works in the GIF below.</p>
-
-        <p class="lead">I’ve also implemented buttons below the bot’s response to switch between different modes and edit the message.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/discordBot_1.PNG" alt="Booking System Image" class="img-fluid w-100">
-            <p>An example response from the Bot. Showing in-game statistics and key information.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="images/discordBot_animation.gif" alt="Booking System Calendar" class="img-fluid w-100">
-            <p>An example of the program remembering your username with the SQL Database to improve user experience.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-</div>
-  
-
-  <!-- Car Rental Booking System with Python section -->
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="mt-5">Car Rental Booking System using Python</h3>
-        <button class="btn btn-secondary" type="button">Python</button>
-        <button class="btn btn-secondary" type="button">Tkinter</button>
-
-        <p class="lead">At the beginning of the year, I started to develop a Car Rental Booking System using Python, and the Tkinter library to create a GUI. The program features an simple interface, complete with dropdown menus, text boxes, and buttons for easy data input. To enhance the user experience further, I integrated a calendar library, allowing users to easily select the booking start and end dates using an calendar widget.</p>
-
-        <p class="lead">The process begins with the user inputting their booking requirements like seat count, vehicle type and their personal information. The program then refines the vehicle list to match these requirements. Once done, the available and fitting vehicles can be easily booked by the user.</p>
-
-        <p class="lead">To implement the booking system I used arrays to keep track of vehicles and bookings. One array stored vehicle details, while another linked booking dates and registration plates for easy identification. This setup allowed the ability to easily determine whether a vehicle is available or not and therefore ensures efficient management and smooth functionality.</p>
-
-        <p class="lead">I noticed a potential issue that might arise, potentially the user could accidentally select an booking `end_date` earlier than or on the same day as the booking `start_date`. To address this, I've developed a function that prevents the selection of a date preceding the `start_date`, and instead, it automatically sets the `end_date` to be one day after the booking `start date`.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <img src="images/bookingSystem_1.PNG" alt="Booking System Image" class="img-fluid w-100">
-            <p>Image of the Booking System initial window.</p>
-        </div>
-        <div class="col-md-6">
-            <img src="images/bookingSystem_animation.GIF" alt="Booking System Calendar" class="img-fluid w-100">
-            <p>An example of the program preventing the user from selecting an `end_date` before the `start_date`.</p>
-        </div>
-    </div>
-    <hr class="my-4">
-</div>
-
-<!-- PC Build section -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h3 class="mt-5">PC Build for a Family Member</h3>
-
-      <p class="lead">During my summer break, I undertook the task of building a new computer for a family member that was frustrated with the speed of their old PC. Their budget was approximately £500, and my objective was to construct a reliable and future-proof system capable of handling a variety of tasks.</p>
-
-      <p class="lead">In terms of components, I went with the AM4 Platform, specifically the Ryzen A520 Chipset, and the Ryzen 5 5600G processor. This APU features 6 high-speed cores, simultaneous multi-threading, and excellent integrated graphics, making it a great fit for most tasks, including light gaming and potential 1080p video editing. For storage, I opted for the Samsung 970 Evo Plus 2TB NVME drive because of its easy installation and significantly faster speeds compared to standard SATA SSDs. This choice not only ensures faster performance but also future-proofs the computer. To complete the build, I housed everything in the Corsair 4000D case, known for its cool design and excellent airflow.</p>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-      <div class="col-md-6">
-          <img src="images/pcBuild_1.jpg" alt="Booking System Image" class="img-fluid w-100">
-          <p>All the components used in this build, excluding the case. <br><br> Processor: Ryzen 5 5600G, RAM: 16GB Corsair Vengeance DDR4 3200MT/s CL16, Gigabyte A520M S2H Motherboard, Samsung 970 Evo Plus 2TB NVMe Drive, Corsair CV650 PSU.</p>
-      </div>
-      <div class="col-md-6">
-          <img src="images/pcBuild_2.jpg" alt="Booking System Calendar" class="img-fluid w-100">
-          <p>Ensuring all the components are functional before commiting to installing the motherboard into the case.</p>
-          <img src="images/pcBuild_4.jpg" alt="Booking System Calendar" class="img-fluid w-100">
-          <p>A photo of the Computer in operation once fully assembled in the Corsair 4000D case.</p>
-          <img src="images/pcBuild_3.jpg" alt="Booking System Calendar" class="img-fluid w-100">
-          <p>Running benchmarks to ensure the PC is performing well and no thermal throttling is occuring.</p>
-      </div>
-      <p class="lead">Overall, I'm pleased with the PC build. The assembly process was quick and straightforward, largely because I didn't need to install a dedicated graphics card or any drives that aren't directly connected to the motherboard. In total, it took less than 30 minutes to complete and is a huge upgrade from their previous computer.</p>
-  </div>
- </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <hr class="my-4">
-        <p>Programmed with ❤️ by &copy Dylan Wilson 2024!</p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
